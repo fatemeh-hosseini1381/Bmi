@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.list{
+    width: 50%;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    animation: changecolor 20s ease-in infinite;
+}
+.list div { 
+    width: 50%;
+    text-align: center;
+    font-weight: bolder;
+}
+.list input{
+    width: 100%;
+    outline: 0;
+    border-radius: 5px;
+    border: 1px solid blue;
+}
+.analiz{
+    width: 100%;
+    margin-top: 5px;
+}
+.analiz>ul>li{
+    list-style: none;
+    width: calc(100% / 5 - 5px);
+    height: 60px;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+.yu-bmi{
+    width: 70%;
+    border-radius: 5px;
+    border: 1px solid rgb(102, 142, 202);
+    margin-left: 125px;
+}
+.yu-bmi >div{
+    width: 30%;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    height: 40px;
+}
+.explain_maine{
+    display: flex;
+    justify-content: space-around;
+}
+.explain_maine div{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+@keyframes changecolor {
+    0%{
+       background-color:  rgb(174, 139, 207); 
+    }
+    20%{
+       background-color:  rgb(141, 247, 99) ;
+    }
+    40%{
+      background-color: rgb(118, 179, 230);  
+    }
+    60%{
+        background-color: rgb(203, 240, 102) ;
+    }
+    80%{
+        background-color: rgb(235, 238, 85);
+    }
+    100%{
+        background-color:rgb(255, 121, 233) ;
+    }
+}
+@keyframes changecolor1{
+    0%{
+       background-color: rgb(255, 255, 255);
+    }
+    100%{
+      background-color: red;
+    }
+    
+}
+@keyframes changecolor2{
+    0%{
+       background-color: rgb(255, 255, 255);
+    }
+    100%{
+      background-color: rgb(255, 230, 5);
+    }
+    
+}
+@keyframes changecolor3{
+    0%{
+       background-color: rgb(255, 255, 255);
+    }
+    100%{
+      background-color: rgb(255, 118, 5);
+    }
+    
+}
+@keyframes changecolor4{
+    0%{
+       background-color: rgb(255, 255, 255);
+    }
+    100%{
+      background-color: rgb(12, 131, 12);
+    }
+    
+}
+.green{
+    animation: changecolor4  2s infinite;
+}
+.orange{
+    animation: changecolor3 2s infinite;
+}
+.yellow{
+    animation: changecolor2 2s infinite;
+}
+.red{
+    animation: changecolor1 2s infinite;
+}

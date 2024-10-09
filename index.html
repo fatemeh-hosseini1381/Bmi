@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
+</head>
+<body>
+    <div class="container navbar">
+       <h1>CALCULAT BMI BODY:</h1>  
+    </div>
+    <div class="container w-100 mt-4 ">
+        <div class="list d-flex flex-column justify-content-center align-itemes-center ">
+            <div class="full-name d-flex flex-column">
+               <label for="">Full Name:</label>
+               <input type="text">
+            </div>
+            <div class="height d-flex flex-column">
+                <label for="">Height:</label>
+               <input type="text"> 
+            </div>
+            <div class="weight d-flex flex-column">
+                <label for="">Weight:</label>
+               <input type="text">
+            </div>
+            <button class="btn click btn-primary px-4 py-2">click</button>
+             
+        </div>
+        <div class="analiz">
+            <ul class="d-flex justify-content-between">
+                <li class="bg-warning">
+                     UNDER Weight
+                    <p class="fw-bold"> < 18.5 </p>
+                </li>
+                <li class="bg-success">NORMAL Weight 
+                    <p class="fw-bold"> 18.5 - 25</p>
+                </li>
+                <li class="bg-orange">OVER Weight 
+                    <P class="fw-bold"> 25 - 30 </P>
+                </li>
+                <li class="bg-danger">OBESE 
+                    <p class="fw-bold">
+                       > 30
+                    </p>
+                </li>
+            </ul> 
+            <div class="yu-bmi d-flex">
+                
+                 <div class="bg-success ">
+                    <p class="fw-bold">YOUR BMI:</p>
+                 </div>
+                <div></div> 
+                <div class="explain_maine d-flex ">
+                    <div class="number"></div>
+                    <div class="explain">
+                       
+                    </div>
+                </div>
+                 
+            </div>  
+        </div>
+    </div>
+    
+   <script src="js/sctipt.js"></script> 
+</body>
+</html>
